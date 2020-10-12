@@ -64,6 +64,7 @@ ul div {
   position: absolute;
 }
 .red {
+  background-color: red;
   top: 0;
 }
 .blue {
@@ -94,9 +95,7 @@ body {
   width: 100vw;
 }
 main {
-  justify-self: flex-end;
   margin: auto;
-
   width: 100vw;
 }
 
@@ -106,10 +105,34 @@ main img {
 }
 
 .searchbar {
-  display: block;
-  margin: 10px auto;
+  margin: 2rem auto;
+  width: 50vw;
+  height: 7vh;
+  border-radius: 100px;
+  border: 1px solid #dfe1e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchbar img {
+  height: 3vh;
+
+  margin: 1rem;
+}
+.searchbar input {
+  flex: 1;
+}
+.search-buttons {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
+.search-buttons a {
+  background-color: #f2f2f2;
+  padding: 0.6rem 1.1rem;
+  border-radius: 5px;
+  margin: 3px;
+}
 /* Footer styling  */
 footer {
   background-color: #f2f2f2;
@@ -129,6 +152,8 @@ a {
   font-size: 14px;
   color: #5f6368;
 }
+
+/* change footer to a flex at 805px */
 
 @media screen and (min-width: 805px) {
   footer {
