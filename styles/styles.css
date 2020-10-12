@@ -1,5 +1,8 @@
-ul li {
+/* Navbar section using flexbox for positioning and responsivness  */
+body * {
   font-family: Arial, Helvetica sans-serif;
+}
+ul li {
   font-size: 13px;
   list-style: none;
   display: inline-block;
@@ -32,6 +35,9 @@ ul div {
   display: flex;
   margin: 0.5rem 1rem;
 }
+
+/* Creates a visual (not literal) border using 4 different colors around the C emblem in the top left corner */
+
 .c-square {
   border-radius: 100px;
   border: white solid 2px;
@@ -58,7 +64,6 @@ ul div {
   position: absolute;
 }
 .red {
-  background-color: red;
   top: 0;
 }
 .blue {
@@ -75,6 +80,60 @@ ul div {
   bottom: 0;
   right: 0;
 }
+
+/* gives 3 x 3 column/row box next to the C emblem an appropriate height  */
+
 .clicker {
   height: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  justify-self: flex-end;
+  margin: auto;
+
+  width: 100vw;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+}
+
+.searchbar {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Footer styling  */
+footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer div {
+  text-align: center;
+  margin: 0.5rem 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+@media screen and (min-width: 805px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
