@@ -1,0 +1,80 @@
+ul li {
+  font-family: Arial, Helvetica sans-serif;
+  font-size: 13px;
+  list-style: none;
+  display: inline-block;
+  margin: 0.25rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+img {
+  max-height: 100%;
+  object-fit: contain;
+}
+ul {
+  margin: 0px;
+  width: 100vw;
+  display: flex;
+
+  padding-left: 0px;
+  justify-content: space-between;
+}
+.leftside {
+  flex: 1 1 30vw;
+}
+.rightside {
+  flex-basis: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+ul div {
+  display: flex;
+  margin: 0.5rem 1rem;
+}
+.c-square {
+  border-radius: 100px;
+  border: white solid 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.circle-back {
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+  position: relative;
+  border-radius: 1000px;
+  overflow: hidden;
+  display: flex;
+}
+.circle-back div {
+  margin: 0px;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+.red {
+  background-color: red;
+  top: 0;
+}
+.blue {
+  background-color: blue;
+  top: 0;
+  right: 0;
+}
+.green {
+  background-color: green;
+  bottom: 0;
+}
+.orange {
+  background-color: orange;
+  bottom: 0;
+  right: 0;
+}
+.clicker {
+  height: 20px;
+}
