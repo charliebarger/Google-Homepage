@@ -1,3 +1,8 @@
+/* Remove blue highlight line from around text input field in the searchbar */
+.searchbar input:focus {
+  outline: none;
+}
+
 /* Navbar section using flexbox for positioning and responsivness  */
 body * {
   font-family: Arial, Helvetica sans-serif;
@@ -87,6 +92,7 @@ ul div {
 .clicker {
   height: 20px;
 }
+/* Organize Body of page  */
 
 body {
   display: flex;
@@ -94,37 +100,61 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+/* Vertically Center Body of page */
 main {
   margin: auto;
   width: 100vw;
 }
+
+/* Horizontally Center Google Logo */
 
 main img {
   display: block;
   margin: 0 auto;
 }
 
+/* Create Wrapper div to center searchbar */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style Searchbar  */
+
 .searchbar {
-  margin: 2rem auto;
-  width: 50vw;
+  flex-basis: 500px;
+  margin: 2rem;
   height: 7vh;
   border-radius: 100px;
   border: 1px solid #dfe1e5;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
+.searchbar:hover {
+  box-shadow: 0px 0px 10px #dfe1e5;
+}
+
 .searchbar img {
   height: 3vh;
-
-  margin: 1rem;
+  margin: 0.75rem;
 }
 .searchbar input {
   flex: 1;
+  border: 0px;
 }
+/* Center and style search buttons */
+
 .search-buttons {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.search-buttons a:hover {
+  box-shadow: 0 0 0 1px #cdc8c8;
 }
 
 .search-buttons a {
@@ -132,6 +162,7 @@ main img {
   padding: 0.6rem 1.1rem;
   border-radius: 5px;
   margin: 3px;
+  display: inline-block;
 }
 /* Footer styling  */
 footer {
@@ -139,10 +170,12 @@ footer {
   border-top: 1px solid #e4e4e4;
 }
 
-footer div {
+footer section {
   text-align: center;
   margin: 0.5rem 0px;
 }
+
+/* style a tags */
 
 a {
   text-decoration: none;
