@@ -1,0 +1,1 @@
+This is a google homepage clone that i created as part of The Odin Projects Curriculum. The project is made with pure HTML & CSS and uses mostly flexbox for the layout of the site. This mock site aims to mimic the look of the google homepage without worrying about functionality.
